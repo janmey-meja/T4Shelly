@@ -1,1 +1,1 @@
-The project uses a Liligo T4S3 board can be used to disply shelly cloud energie data on this small screen. 
+This is a clone of a Volos Project for later own use. Therefore this clone is base for later own experimets and adjustments to disply different values. The project uses a Liligo T4S3 board can be used to disply shelly cloud energie data on this small screen. 
