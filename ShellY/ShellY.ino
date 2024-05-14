@@ -42,8 +42,10 @@ JsonDocument doc;
 
 String days2[7]={"Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"};
 
-int bright[6]={40,60,100,126,180,220}; //brightness levels
-int b=2; //chosen brightness level
+// define the 6 brightness levels
+int bright[6]={40,60,100,126,180,220}; 
+// set the default chosen brightness level
+int b=2;                                
 
 //colors
 unsigned short grays[24];
