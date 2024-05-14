@@ -205,7 +205,8 @@ void initDraw()
    spr.setTextColor(grays[12],grays[22]);
    spr.drawString("LAST 2 MIN",399,196);
     spr.setTextColor(grays[4],grays[19]);
-   spr.drawString("WD90 Shelly",434,34);
+  // Text shown top right as Label
+   spr.drawString("WD90 Shelly EM",434,34);
    spr.unloadFont();
 
    spr.fillSmoothRoundRect(434, 52 , 126, 7, 2, lightblue,grays[19]);
