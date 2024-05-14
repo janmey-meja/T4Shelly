@@ -22,10 +22,16 @@ LilyGo_Class amoled;
 
 ESP32Time rtc(0); 
 
+// include WIFI credentials here
 const char* ssid = "HomeMyDear";
 const char* password = "12345678";
+
+// include Shelly API server & device Id & AAPI Key here
+// Sample url string: "https://shelly-100-eu.shelly.cloud/device/status?id=08F9345E751E4&auth_key=TjJjMTJjdWLk21CF89A5eFD3861B5E38B10B11CC8349282280C896417B97A6F7EBr3E65CB88065B037F11CC5F" 
+// how to find yours look at the youtube video 
 const char* url = "https://shelly-100-eu.shelly.cloud/device/status?id=08F9345E751E4&auth_key=TjJjMTJjdWLk21CF89A5eFD3861B5E38B10B11CC8349282280C896417B97A6F7EBr3E65CB88065B037F11CC5F";
 
+// ntp server & time zone setting 
 const char* ntpServer = "pool.ntp.org";
 const long  gmtOffset_sec =7200;            //time zone * 3600 , my time zone is  +2 GTM
 const int   daylightOffset_sec = 0; 
@@ -199,7 +205,7 @@ void initDraw()
    spr.setTextColor(grays[12],grays[22]);
    spr.drawString("LAST 2 MIN",399,196);
     spr.setTextColor(grays[4],grays[19]);
-   spr.drawString("VOLOS PROJECTS",434,34);
+   spr.drawString("WD90 Shelly",434,34);
    spr.unloadFont();
 
    spr.fillSmoothRoundRect(434, 52 , 126, 7, 2, lightblue,grays[19]);
